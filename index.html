@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Raufzoda Komyob">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tulpbar</title>
+    <script  defer src="./script.js"></script>
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./adaptive.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="modal">
+        <div class="modal__block">
+          <div class="cancel">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.25C6.62391 2.25 2.25 6.62391 2.25 12C2.25 17.3761 6.62391 21.75 12 21.75C17.3761 21.75 21.75 17.3761 21.75 12C21.75 6.62391 17.3761 2.25 12 2.25ZM15.5302 14.4698C15.6027 14.5388 15.6608 14.6216 15.7008 14.7133C15.7409 14.805 15.7622 14.9039 15.7635 15.004C15.7648 15.1041 15.746 15.2034 15.7083 15.2961C15.6706 15.3889 15.6147 15.4731 15.5439 15.5439C15.4731 15.6147 15.3889 15.6706 15.2961 15.7083C15.2034 15.746 15.1041 15.7648 15.004 15.7635C14.9039 15.7622 14.805 15.7409 14.7133 15.7008C14.6216 15.6608 14.5388 15.6027 14.4698 15.5302L12 13.0608L9.53016 15.5302C9.38836 15.6649 9.19955 15.7389 9.00398 15.7364C8.8084 15.7339 8.62155 15.6551 8.48325 15.5168C8.34495 15.3785 8.26614 15.1916 8.26364 14.996C8.26114 14.8005 8.33513 14.6116 8.46984 14.4698L10.9392 12L8.46984 9.53016C8.33513 9.38836 8.26114 9.19955 8.26364 9.00398C8.26614 8.8084 8.34495 8.62155 8.48325 8.48325C8.62155 8.34495 8.8084 8.26614 9.00398 8.26364C9.19955 8.26114 9.38836 8.33513 9.53016 8.46984L12 10.9392L14.4698 8.46984C14.6116 8.33513 14.8005 8.26114 14.996 8.26364C15.1916 8.26614 15.3785 8.34495 15.5168 8.48325C15.6551 8.62155 15.7339 8.8084 15.7364 9.00398C15.7389 9.19955 15.6649 9.38836 15.5302 9.53016L13.0608 12L15.5302 14.4698Z" fill="#8093AC"/>
+            </svg>              
+          </div>
+          <h2>Оставьте свои данные</h2>
+          <input type="text" id="text" required placeholder="Введите имя"/>
+          <input type="text" id="phone" required placeholder="Номер телефона" />
+         <img src="./img/robot.png" alt="Robot" />
+         <button type="submit" class="to__black">Отправить</button>
+        </div>
+      </div>
+      <main class="main" id="main">
+        <img
+          src="./img/main left.png"
+          alt="Main left"
+          class="main__left__img"
+        />
+        <img
+          src="./img/main right.png"
+          alt="Main right"
+          class="main__right__img"
+        />
+
+        <div class="container">
+          <header class="header">
+            <div class="header__logo header__logo__top">
+              <svg width="35" class="mobile__logo" height="22" viewBox="0 0 35 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.0200593 8.23251C0.228006 11.065 2.19771 13.3344 5.9292 15.0405C10.4047 10.0603 17.1657 5.04682 26.2121 0C19.985 2.5766 13.9627 5.84292 8.14499 9.79914C6.0985 8.07646 5.24626 6.69019 5.58826 5.64018C6.06474 4.23236 7.21989 3.81454 9.05399 4.38678C7.87355 4.21453 7.25098 4.42109 7.18612 5.00643C7.131 5.3878 7.3566 5.61711 7.60359 5.78203C8.02601 6.06408 8.57384 6.10097 9.46565 6.01044C10.29 5.93275 10.9764 6.19862 11.5252 6.808C11.8165 6.96391 11.9632 6.81196 11.9655 6.3522C12.4553 6.37063 12.7677 6.3374 12.903 6.25256C10.6676 4.86587 9.09562 3.75485 8.18731 2.91965C7.46279 2.39743 8.54354 1.97165 8.58924 1.83333C5.20574 1.39242 3.08506 2.36962 2.29271 3.53212C0.621302 4.92434 -0.136285 6.49115 0.0200593 8.23251Z" fill="#32495E"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.1582 6.37595C20.0956 7.43095 13.0317 11.7845 3.96649 19.4366C12.6313 9.88128 19.8274 4.63946 25.5558 3.71235C30.0588 3.15216 32.9753 4.57641 34.3053 7.9853C34.767 10.7822 32.1346 13.7827 26.408 16.9869C22.8217 19.0969 19.9052 20.7681 17.6585 22.0004C14.5833 20.7087 11.7426 19.1515 9.13623 17.3287C15.8353 12.1421 20.3805 9.54038 22.7719 9.5235C24.3054 9.27698 25.1528 9.79919 25.3144 11.0901C25.2661 11.8519 24.8306 12.4501 24.0077 12.8848C24.1189 11.829 23.7022 11.1453 22.7577 10.8338C21.2581 10.5679 20.2922 10.9667 19.8602 12.0302C19.0603 14.1515 18.3785 15.3906 17.8148 15.7476C16.7859 16.2537 16.3551 16.7095 16.5223 17.1149C16.7335 17.6519 16.9276 17.9652 17.1047 18.055C17.3849 17.6566 17.6453 17.4098 17.8858 17.3143C18.0995 17.5048 17.8675 17.9368 17.1899 18.6105C17.4795 18.8755 17.8535 18.8564 18.3119 18.5535C22.9116 15.5752 25.9039 13.6951 27.2888 12.9133C27.7151 12.7139 28.2076 12.9466 28.766 13.6111C28.8853 12.816 28.9705 11.8475 29.0216 10.7058C30.1455 8.67752 30.2401 7.31021 29.3056 6.60384C28.0356 5.99155 26.6531 5.91558 25.1582 6.37595Z" fill="#E95258"/>
+              </svg>                
+              <img src="./img/logo.png" alt="Logo" />
+              <h1>Tulpbar</h1>
+            </div>
+            <div class="menu__burger">
+              <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="45" height="45" fill="#32495E"/>
+                <path d="M9 12H35V15.1667H9V12ZM9 19.9167H35V23.0833H9V19.9167ZM9 27.8333H35V31H9V27.8333Z" fill="#F1F6FF"/>
+              </svg>               
+            </div>
+            <nav class="header__nav">
+              <ul class="header__nav__list">
+                <li><a href="#main" class="header__nav__links">Главная</a></li>
+                <li><a href="" class="header__nav__links">Наши услуги</a></li>
+                <li><a href="#special" class="header__nav__links">Отчеты</a></li>
+                <li><a href="#" class="header__nav__links">О нас</a></li>
+                <li><a href="#news" class="header__nav__links">Новости</a></li>
+                <li><a href="#" class="header__nav__links">РУС</a></li>
+                <li class="langs">
+                  <div class="btn__langs">
+                    рус
+                  </div>
+                  <div class="btn__langs">
+                    каз
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <div class="main__inf">
+            <div class="main__inf__left">
+              <h1 class="main__inf__title">Кардио-реаблитационный центр</h1>
+              <p class="main__inf__text">
+                Кардиореабилитация представляет собой совокупность восстанавливающих процедур и диагностических методик, направленных на восстановление естественной жизнедеятельности пациентов, которые перенесли 
+                операции или имеют заболевания сердечно-сосудистой системы.
+              </p>
+              <div class="main__inf__list">
+                <div>Консультативные услуги</div>
+                <div>Функциональная диагностика</div>
+                <div>Анестезиология иреаниматология</div>
+                <div>Общеклинические исследования</div>
+              </div>
+              <div class="btn">Все услуги</div>
+            </div>
+            <div class="main__inf__right">
+              <h1 class="main__inf__title">Травма-реабилитационный центр</h1>
+              <p class="main__inf__text">
+                Реабилитация пациентов травматолого-ортопедического профиля включает мероприятия, направленные на устранение последствий травм,
+                ранее проведённых операций, 
+                врождённых патологий и т. д.
+              </p>
+              <div class="main__inf__list">
+                <div>Физиотераптические процедуры</div>
+                <div>Механотерапия</div>
+                <div>Массаж</div>
+                <div>Сервисные и административные услуги</div>
+              </div>
+              <div class="btn">Все услуги</div>
+            </div>
+          </div>
+        </div>
+        <div class="main__icons">
+          <div><img src="./img/main icon1.png" alt="icon1" /></div>
+          <div><img src="./img/main icon2.png" alt="icon2" /></div>
+          <div><img src="./img/main icon3.png" alt="icon3" /></div>
+          <div><img src="./img/main icon 4.png" alt="icon4" /></div>
+          <div><img src="./img/main icon5.png" alt="icon5" /></div>
+        </div>
+        <svg
+          class="main__svg"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="30" cy="30" r="30" fill="#F2C94C" />
+          <path
+            d="M29.9999 18C29.6905 18 29.3938 18.1229 29.175 18.3417C28.9562 18.5605 28.8333 18.8572 28.8333 19.1667V21.5C28.8333 21.8094 28.9562 22.1062 29.175 22.325C29.3938 22.5437 29.6905 22.6667 29.9999 22.6667C30.3093 22.6667 30.6061 22.5437 30.8249 22.325C31.0437 22.1062 31.1666 21.8094 31.1666 21.5V19.1667C31.1666 18.8572 31.0437 18.5605 30.8249 18.3417C30.6061 18.1229 30.3093 18 29.9999 18ZM29.9999 13.3333C27.834 13.3333 25.7568 14.1937 24.2252 15.7253C22.6937 17.2568 21.8333 19.3341 21.8333 21.5V28.5C21.8333 30.6659 22.6937 32.7432 24.2252 34.2747C25.7568 35.8062 27.834 36.6667 29.9999 36.6667C32.1659 36.6667 34.2431 35.8062 35.7746 34.2747C37.3062 32.7432 38.1666 30.6659 38.1666 28.5V21.5C38.1666 19.3341 37.3062 17.2568 35.7746 15.7253C34.2431 14.1937 32.1659 13.3333 29.9999 13.3333ZM35.8333 28.5C35.8333 30.0471 35.2187 31.5308 34.1247 32.6248C33.0307 33.7187 31.547 34.3333 29.9999 34.3333C28.4528 34.3333 26.9691 33.7187 25.8751 32.6248C24.7812 31.5308 24.1666 30.0471 24.1666 28.5V21.5C24.1666 19.9529 24.7812 18.4692 25.8751 17.3752C26.9691 16.2812 28.4528 15.6667 29.9999 15.6667C31.547 15.6667 33.0307 16.2812 34.1247 17.3752C35.2187 18.4692 35.8333 19.9529 35.8333 21.5V28.5Z"
+            fill="#32495E"
+          />
+          <path d="M30 49L27.4019 44.5L32.5981 44.5L30 49Z" fill="#32495E" />
+        </svg>
+      </main>
+      <section class="service" id="service">
+        <div class="container">
+          <h1 class="service__title">наши услуги</h1>
+          <div class="service__items">
+            <div class="service__item">
+                <img src="./img/service item1.png" alt="Service item" />
+              <div class="service__item__block">
+                <h3>Кардио-реаблитационный центр</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+              </div>
+            </div>
+            <div class="service__item">
+              <img src="./img/service item2.png" alt="Service item" />
+              <h3>Травма-реабилитационный центр</h3>
+            </div>
+            <div class="service__item">
+              <img src="./img/service item3.png" alt="Service item" />
+              <h3>Кафе еда и еще слова что бы было две строки</h3>
+            </div>
+            <div class="service__item">
+              <img src="./img/service item4.png" alt="Service item" />
+              <h3>Сауна высшего класса для восстановления</h3>
+            </div>
+          </div>
+          <div class="to__center">
+            <div class="btn to__black">Все услуги</div>
+          </div>
+          <h1 class="service__title deskt__title ">наши специалисты</h1>
+      </section>
+      <section class="special" id="special">
+        <div class="container">
+          <h1 class="service__title mob__title">наши специалисты</h1>
+        <div class="special__items">
+          <div class="special__item">
+            <img src="./img/special1.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+           <img src="./img/special2.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special3.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special4.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special1.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special2.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special3.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+          <div class="special__item">
+            <img src="./img/special4.png" alt="Special">
+            <h2>Доктор Аблай Туркесович</h2>
+            <p>Lorem Ipsum is simply dummy text of the 
+              printing and typesetting industry. Lorem Ipsum has been the 
+              industry's standard dummy text
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section class="pricelist" id="pricelist">
+        <div class="container">
+          <div class="service__title">
+            Прайс лист
+          </div>
+          <div class="pricelist__items">
+            <table class="pricelist__item">
+              <tr>
+                <th>Название услуги</th>
+                <th>Стоимость</th>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+            </table>
+            <table class="pricelist__item">
+              <tr>
+                <th>Название услуги</th>
+                <th>Стоимость</th>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+              <tr>
+                <td>Название услуги в несколько строк</td>
+                <td>3000 / час</td>
+              </tr>
+            </table>
+          </div>
+          <div class="to__center">
+            <div class="btn to__black">Все услуги</div>
+          </div>
+        </div>
+      </section>
+      <section class="photos" id="photos">
+        <div class="photos__left"></div>
+        <div class="photos__right"></div>
+        <div class="container">
+          <h1 class="service__title">фото и видео отчеты</h1>
+          <ul class="photos__list">
+            <li>показать все</li>
+            <li>только фото</li>
+            <li>только видео</li>
+          </ul>
+          <div class="photos__items">
+            <div class="photos__item">
+              <div class="btn">Увеличить</div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.43994 16.9999C5.43994 23.3919 10.6079 28.5599 16.9999 28.5599C23.3919 28.5599 28.5599 23.3919 28.5599 16.9999C28.5599 10.6079 23.3919 5.43994 16.9999 5.43994C10.6079 5.43994 5.43994 10.6079 5.43994 16.9999ZM6.79994 16.9999C6.79994 11.3559 11.3559 6.79994 16.9999 6.79994C22.6439 6.79994 27.1999 11.3559 27.1999 16.9999C27.1999 22.6439 22.6439 27.1999 16.9999 27.1999C11.3559 27.1999 6.79994 22.6439 6.79994 16.9999ZM23.7999 17L13.5999 11.084V22.916L23.7999 17ZM14.9599 20.536V13.396L21.0799 16.932L14.9599 20.536Z" fill="#F9F9F9"/>
+                  </svg>
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.43994 16.9999C5.43994 23.3919 10.6079 28.5599 16.9999 28.5599C23.3919 28.5599 28.5599 23.3919 28.5599 16.9999C28.5599 10.6079 23.3919 5.43994 16.9999 5.43994C10.6079 5.43994 5.43994 10.6079 5.43994 16.9999ZM6.79994 16.9999C6.79994 11.3559 11.3559 6.79994 16.9999 6.79994C22.6439 6.79994 27.1999 11.3559 27.1999 16.9999C27.1999 22.6439 22.6439 27.1999 16.9999 27.1999C11.3559 27.1999 6.79994 22.6439 6.79994 16.9999ZM23.7999 17L13.5999 11.084V22.916L23.7999 17ZM14.9599 20.536V13.396L21.0799 16.932L14.9599 20.536Z" fill="#F9F9F9"/>
+                  </svg>
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.43994 16.9999C5.43994 23.3919 10.6079 28.5599 16.9999 28.5599C23.3919 28.5599 28.5599 23.3919 28.5599 16.9999C28.5599 10.6079 23.3919 5.43994 16.9999 5.43994C10.6079 5.43994 5.43994 10.6079 5.43994 16.9999ZM6.79994 16.9999C6.79994 11.3559 11.3559 6.79994 16.9999 6.79994C22.6439 6.79994 27.1999 11.3559 27.1999 16.9999C27.1999 22.6439 22.6439 27.1999 16.9999 27.1999C11.3559 27.1999 6.79994 22.6439 6.79994 16.9999ZM23.7999 17L13.5999 11.084V22.916L23.7999 17ZM14.9599 20.536V13.396L21.0799 16.932L14.9599 20.536Z" fill="#F9F9F9"/>
+                  </svg>
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+            <div class="photos__item">
+              <div class="photos__item__block">
+                  <p>Название фото в две троки максимум</p>                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="to__center">
+          <div class="btn to__black">Показать все</div>
+        </div>
+      </section>
+      <section class="news" id="news">
+        <div class="container">
+          <h1 class="service__title">
+            Наши новости
+          </h1>
+          <div class="news__items">
+            <div class="news__item">
+              <div class="news__item__block">
+                <h3>Название новости - Заголовок в две строки</h3>
+                <p>Lorem Ipsum is simply dummy text of the
+                 printing and typesetting industry</p>
+                 <p>Читать полностью</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item__block">
+                <h3>Название новости - Заголовок в две строки</h3>
+                <p>Lorem Ipsum is simply dummy text of the
+                 printing and typesetting industry</p>
+                 <p>Читать полностью</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item__block">
+                <h3>Название новости - Заголовок в две строки</h3>
+                <p>Lorem Ipsum is simply dummy text of the
+                 printing and typesetting industry</p>
+                 <p>Читать полностью</p>
+              </div>
+            </div>
+            <div class="news__item">
+              <div class="news__item__block">
+                <h3>Название новости - Заголовок в две строки</h3>
+                <p>Lorem Ipsum is simply dummy text of the
+                 printing and typesetting industry</p>
+                 <p>Читать полностью</p>
+              </div>
+            </div>
+          </div>
+          <div class="to__center">
+            <div class="btn to__black">Все новости</div>
+          </div>
+        </div>
+      </section>
+      <section class="answer" id="answer">
+        <div class="answer__title__block">
+          <div class="container">
+            <div class="service__title">
+              вопрос ответ
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="answer__list">
+         <details>
+           <summary>
+            Вопрос 1
+          </summary>
+          <div class="answer__dets">
+             <h2>Ответ</h2>
+             <div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+          </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 2
+          </summary>
+          <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 3
+          </summary>
+          <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 4
+          </summary>
+          <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 5
+          </summary>
+          <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 6
+          </summary>
+          <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+         <details>
+           <summary>
+            Вопрос 7
+             </summary>
+             <div class="answer__dets">
+              <h2>Ответ</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+           </div>
+           </summary>
+         </details>
+         <details>
+           <summary>
+              Вопрос 8
+           </summary>
+           <div class="answer__dets">
+            <h2>Ответ</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+         </div>
+         </details>
+        </div>
+        </div>
+      </section>
+      <section class="recomend" id="recomend">
+        <div class="container">
+          <h1 class="service__title">
+            Нас рекомендуют
+          </h1>
+        <div class="recomend__items">
+          <img src="./img/rec1.png" alt="Rec" />
+          <img src="./img/rec2.png" alt="Rec" />
+          <img src="./img/rec3.png" alt="Rec" />
+          <img src="./img/rec4.png" alt="Rec" />
+          <img src="./img/rec5.png" alt="Rec" />
+        </div>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <h1 class="service__title">
+           Контакты
+          </h1>
+          <div class="contact__map">
+            <img src="./img/map.png" alt="Map" />
+          </div>
+          <div class="contact__items">
+            <div class="contact__item">
+              <h3>Адреса компании</h3>
+              <p>Ул. Печугина 240/1, г. Караганда,<br> 100000, Казахстан</p>
+            </div>
+            <div class="contact__item">
+              <h3>Номера телефонов</h3>
+              <p>+7 700 000 00 00 <br>
+                +7 700 000 00 00</p>
+            </div>
+            <div class="contact__item">
+              <h3>Дополнительные способы связи</h3>
+              <p>support@test.kz <br>
+                support@test.kz</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer__items">
+              <div class="footer__item">
+                <div class="header__logo">
+                  <img src="./img/footer logo.png" alt="Footer logo" />
+                  <h1>Tulpbar</h1>
+                </div>
+              </div>
+              <div class="footer__item">
+                <h2 class="footer__title">Карта сайта</h2>
+                <ul class="footer__list">
+                  <li><a href="#main">Главная</a></li>
+                  <li><a href="#service">Наши услуги</a></li>
+                  <li><a href="#special">Отчеты</a></li>
+                  <li><a href="#news">О нас</a></li>
+                  <li><a href="#contact">Контакты</a></li>
+                </ul>
+              </div>
+              <div class="footer__item">
+                <h2 class="footer__title">Связаться с нами</h2>
+                <div class="footer__item__block">
+                  <div>+7 700 000 00 00</div>
+                  <div>+7 700 000 00 00</div>
+                  <div>support@test.kz</div>
+                  <div class="footer__social">
+                    <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.50084 1.41797C4.58942 1.41797 1.41821 4.58918 1.41821 8.50059C1.41821 12.0352 4.00788 14.9648 7.39442 15.4982V10.5484H5.59525V8.50059H7.39442V6.94014C7.39442 5.16364 8.45196 4.18401 10.0691 4.18401C10.844 4.18401 11.6558 4.32214 11.6558 4.32214V6.06393H10.7604C9.88209 6.06393 9.60725 6.61076 9.60725 7.17105V8.49918H11.57L11.2563 10.547H9.60725V15.4968C12.9938 14.9663 15.5835 12.0359 15.5835 8.50059C15.5835 4.58918 12.4123 1.41797 8.50084 1.41797Z" fill="#E95258"/>
+                      </svg>
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 1.0625C4.39277 1.0625 1.0625 4.39277 1.0625 8.5C1.0625 12.6072 4.39277 15.9375 8.5 15.9375C12.6072 15.9375 15.9375 12.6072 15.9375 8.5C15.9375 4.39277 12.6072 1.0625 8.5 1.0625ZM11.2725 11.5812C10.5984 12.2021 9.67871 12.5674 8.58135 12.5674C6.99258 12.5674 5.61797 11.656 4.94893 10.3278C4.67334 9.77832 4.51562 9.15742 4.51562 8.5C4.51562 7.84258 4.67334 7.22168 4.94893 6.67217C5.61797 5.34238 6.99258 4.43096 8.58135 4.43096C9.67705 4.43096 10.5968 4.83438 11.3023 5.49014L10.1369 6.65723C9.71523 6.25381 9.179 6.04961 8.58301 6.04961C7.52383 6.04961 6.62734 6.76514 6.30693 7.72637C6.22559 7.97041 6.1791 8.23105 6.1791 8.5C6.1791 8.76895 6.22559 9.02959 6.30693 9.27363C6.62734 10.2349 7.52383 10.9504 8.58135 10.9504C9.1292 10.9504 9.59404 10.806 9.95762 10.5619C10.3893 10.273 10.6748 9.84307 10.7694 9.3334H8.58135V7.75957H12.4113C12.4595 8.02686 12.4844 8.3041 12.4844 8.59131C12.4844 9.83145 12.0411 10.8724 11.2725 11.5812Z" fill="#E95258"/>
+                      </svg>
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.50084 1.41797C4.58942 1.41797 1.41821 4.58918 1.41821 8.50059C1.41821 12.0352 4.00788 14.9648 7.39442 15.4982V10.5484H5.59525V8.50059H7.39442V6.94014C7.39442 5.16364 8.45196 4.18401 10.0691 4.18401C10.844 4.18401 11.6558 4.32214 11.6558 4.32214V6.06393H10.7604C9.88209 6.06393 9.60725 6.61076 9.60725 7.17105V8.49918H11.57L11.2563 10.547H9.60725V15.4968C12.9938 14.9663 15.5835 12.0359 15.5835 8.50059C15.5835 4.58918 12.4123 1.41797 8.50084 1.41797Z" fill="#E95258"/>
+                      </svg>
+                      <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 1.0625C4.39277 1.0625 1.0625 4.39277 1.0625 8.5C1.0625 12.6072 4.39277 15.9375 8.5 15.9375C12.6072 15.9375 15.9375 12.6072 15.9375 8.5C15.9375 4.39277 12.6072 1.0625 8.5 1.0625ZM11.2725 11.5812C10.5984 12.2021 9.67871 12.5674 8.58135 12.5674C6.99258 12.5674 5.61797 11.656 4.94893 10.3278C4.67334 9.77832 4.51562 9.15742 4.51562 8.5C4.51562 7.84258 4.67334 7.22168 4.94893 6.67217C5.61797 5.34238 6.99258 4.43096 8.58135 4.43096C9.67705 4.43096 10.5968 4.83438 11.3023 5.49014L10.1369 6.65723C9.71523 6.25381 9.179 6.04961 8.58301 6.04961C7.52383 6.04961 6.62734 6.76514 6.30693 7.72637C6.22559 7.97041 6.1791 8.23105 6.1791 8.5C6.1791 8.76895 6.22559 9.02959 6.30693 9.27363C6.62734 10.2349 7.52383 10.9504 8.58135 10.9504C9.1292 10.9504 9.59404 10.806 9.95762 10.5619C10.3893 10.273 10.6748 9.84307 10.7694 9.3334H8.58135V7.75957H12.4113C12.4595 8.02686 12.4844 8.3041 12.4844 8.59131C12.4844 9.83145 12.0411 10.8724 11.2725 11.5812Z" fill="#E95258"/>
+                      </svg>                                                    
+                  </div>
+                </div>
+              </div>
+              <div class="footer__up">
+                <a href="#main">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17" cy="17" r="17" fill="#E95258"/>
+                  <path d="M13.5508 14.2904C13.4333 14.4067 13.2746 14.472 13.1092 14.472C12.9438 14.472 12.7851 14.4067 12.6676 14.2904C12.6096 14.2332 12.5635 14.1651 12.532 14.09C12.5006 14.0149 12.4844 13.9342 12.4844 13.8528C12.4844 13.7714 12.5006 13.6907 12.532 13.6156C12.5635 13.5405 12.6096 13.4724 12.6676 13.4152L16.197 9.95626C16.3148 9.84006 16.4736 9.7749 16.6391 9.7749C16.8045 9.7749 16.9634 9.84006 17.0812 9.95626L20.6106 13.4152C20.6686 13.4724 20.7147 13.5405 20.7461 13.6156C20.7776 13.6907 20.7938 13.7714 20.7938 13.8528C20.7938 13.9342 20.7776 14.0149 20.7461 14.09C20.7147 14.1651 20.6686 14.2332 20.6106 14.2904C20.4928 14.4066 20.334 14.4717 20.1685 14.4717C20.003 14.4717 19.8442 14.4066 19.7264 14.2904L16.6377 11.4536L13.5508 14.2904Z" fill="#F9F9F9"/>
+                  <path d="M13.5508 18.806C13.4333 18.9224 13.2746 18.9876 13.1092 18.9876C12.9438 18.9876 12.7851 18.9224 12.6676 18.806C12.6096 18.7488 12.5635 18.6807 12.532 18.6056C12.5006 18.5305 12.4844 18.4499 12.4844 18.3684C12.4844 18.287 12.5006 18.2064 12.532 18.1312C12.5635 18.0561 12.6096 17.988 12.6676 17.9309L16.197 14.4719C16.3148 14.3557 16.4736 14.2905 16.6391 14.2905C16.8045 14.2905 16.9634 14.3557 17.0812 14.4719L20.6106 17.9309C20.6686 17.988 20.7147 18.0561 20.7461 18.1312C20.7776 18.2064 20.7938 18.287 20.7938 18.3684C20.7938 18.4499 20.7776 18.5305 20.7461 18.6056C20.7147 18.6807 20.6686 18.7488 20.6106 18.806C20.4928 18.9222 20.334 18.9873 20.1685 18.9873C20.003 18.9873 19.8442 18.9222 19.7264 18.806L16.6377 15.9693L13.5508 18.806Z" fill="#F9F9F9"/>
+                  <path d="M13.5508 23.3216C13.4333 23.438 13.2746 23.5033 13.1092 23.5033C12.9438 23.5033 12.7851 23.438 12.6676 23.3216C12.6096 23.2645 12.5635 23.1964 12.532 23.1212C12.5006 23.0461 12.4844 22.9655 12.4844 22.884C12.4844 22.8026 12.5006 22.722 12.532 22.6469C12.5635 22.5717 12.6096 22.5036 12.6676 22.4465L16.197 18.9875C16.3148 18.8713 16.4736 18.8062 16.6391 18.8062C16.8045 18.8062 16.9634 18.8713 17.0812 18.9875L20.6106 22.4465C20.6686 22.5036 20.7147 22.5717 20.7461 22.6469C20.7776 22.722 20.7938 22.8026 20.7938 22.884C20.7938 22.9655 20.7776 23.0461 20.7461 23.1212C20.7147 23.1964 20.6686 23.2645 20.6106 23.3216C20.4928 23.4378 20.334 23.503 20.1685 23.503C20.003 23.503 19.8442 23.4378 19.7264 23.3216L16.6377 20.4849L13.5508 23.3216Z" fill="#F9F9F9"/>
+                  </svg>
+                  </a>
+                  <p>На вверх</p>
+              </div>
+            </div>
+            <div class="footer__copy">
+              &copy;Все права защищены 2019 “Тулпар”
+            </div>
+            </div>
+      </footer>
+    </div>
+  </body>
+</html>
